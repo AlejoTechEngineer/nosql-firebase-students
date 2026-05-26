@@ -1,7 +1,6 @@
 const admin = require("firebase-admin");
 const serviceAccount = require("./estudiantes-politecnico-firebase-adminsdk-fbsvc-3c3468eeed.json");
 
-// Reemplaza el nombre del archivo .json con el nombre exacto que tienes
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
