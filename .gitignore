@@ -1,0 +1,8 @@
+# Credenciales de Firebase / Google Cloud — nunca subir al repo
+*-firebase-adminsdk-*.json
+
+# Configuración local de Claude Code
+.claude/
+
+# Dependencias de Node.js
+node_modules/
