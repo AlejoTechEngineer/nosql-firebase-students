@@ -304,3 +304,15 @@ Fundamentos de la Tecnología Cloud · Laboratorio No. 1
 *Politécnico Grancolombiano — 2026*
 
 </div>
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[cargar-datos.js - Script Node.js] --> B[Service Account .json - Credenciales GCP]
+    A --> C[Firebase Admin SDK v13 - Inicializacion]
+    C --> D[Google Cloud Platform - Firebase Project]
+    D --> E[Cloud Firestore - Base de Datos NoSQL]
+    E --> F[Collection: estudiantes - 10 documentos auto-ID]
+    F --> G[nombre - apellido - telefono - edad - correo - universidad - semestre - promedio]
+    B --> C
+```
